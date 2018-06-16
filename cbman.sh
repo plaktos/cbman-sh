@@ -1,7 +1,6 @@
 #!/bin/bash
 #
 # cbman - clipboard manager
-# allows joining multiple copied text for a final pase
 
 board_file=~/.cbman_board
 
@@ -30,13 +29,11 @@ case $1 in
         print_help
         ;;
     -c)
-        echo -n $(xclip -o) >> $board_file 
-        echo -n " " >> $board_file
+        echo -n $(xclip -o) >> $board_file && echo -n " " >> $board_file
         ;;
     -a)
         while [[ -n $2 ]]; do
-            echo -n "$2" >> $board_file
-            echo -n " " >> $board_file
+            echo -n "$2" >> $board_file && echo -n " " >> $board_file
             shift
         done
         ;;

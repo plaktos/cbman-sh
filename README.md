@@ -5,6 +5,8 @@ Example use: fast jointment of links for use with download managers, such as ari
 
 * For usage info try:
 `cbman.sh -h`
+##### Requirements
+* xclip
 ##### Functionalities
 * Append current clipboard to cbman clipboard
 * Retrieve the cbman clipboard
@@ -19,4 +21,4 @@ alias cbmr='cbman.sh -p && cbman.sh -r'
 Don't forget that cbman.sh has to be in PATH for these to work.
 
 You can also create hotkeys for easy access ex:
-`bash /PATH_TO/cbman.sh -c`
+```bash /PATH_TO/cbman.sh -c```
