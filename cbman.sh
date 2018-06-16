@@ -8,7 +8,7 @@ print_help(){
     cat << _EOF_
         cbman - clipboard manager
         usage: cbman [-c] | [-a STRING...] | [-l] | [-p] | [-r]
-        cbman board file located at: ~/.cman_board
+        cbman board file located at: ~/.cbman_board
         You can change the cbman board file in the cbman.sh script file
         
         -c              append current clipboard to the cbman board
